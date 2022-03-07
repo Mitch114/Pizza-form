@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GodMother Pizza</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>GodMother Pizza</h1>
+        <form action="read_form.php" method="post">
+        
+        <fieldset>
+        <legend>Customer Information</legend>
+            <label>Phone Number:</label>
+            <input type="text" name="phone" value="" class="textbox">
+            <br>
+        
+            <label>Address:</label>
+            <input type="text" name="address" value="" class="textbox">
+            <br>
+        
+            <label>Address 2:</label>
+            <input type="text" name="address2" value="" class="textbox">
+        </fieldset>
+        
+        
+        <fieldset>
+            <div id="data">
+                <h4>Select Size</h4>
+                <input type="radio" name="size" value="medium">Medium $7.00<br>
+                <input type="radio" name="size" value="large">Large $9.00<br>
+                <input type="radio" name="size" value="family">Family $12.00<br>
+                
+                
+                <h4>Toppings ($1.25 ea.)</h4>
+                <input type="checkbox" name="topping[]" value="pepperoni">Pepperoni<br>
+                <input type="checkbox" name="topping[]" value="sasuage">Sasuage<br> 
+                <input type="checkbox" name="topping[]" value="mushrooms">Mushrooms<br> 
+                <input type="checkbox" name="topping[]" value="peppers">Peppers<br> 
+                <input type="checkbox" name="topping[]" value="anchovies">Anchovies<br>
+
+                <h4>Other Items ($1.50 ea.)</h4>
+                <select name="items[]" size = "3" multiple>
+                    <option value="dip">Dip</option>
+                    <option value="cheese sticks">Cheese Sticks</option>
+                    <option value="soda">Soda</option>
+                </select>
+
+                <h4>Special request</h4>
+
+                <textarea name="request" cols="30" rows="5"></textarea>
+            </div>
+        </fieldset>
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit Form"><br>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
